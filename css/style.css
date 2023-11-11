@@ -341,7 +341,10 @@ header.navbar-container .nav-list li:hover a {
 
 /*MEDIA QUERIES*/
 /* Laptop/Desktop */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 100%;
+  }
   header.navbar-container {
     padding-block: 2rem;
   }
@@ -385,9 +388,9 @@ header.navbar-container .nav-list li:hover a {
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  body {
-    font-size: 14px;
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 80%;
   }
 
   header.navbar-container {
@@ -417,9 +420,9 @@ header.navbar-container .nav-list li:hover a {
 }
 
 /* Hp */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 70%;
   }
 
   header.navbar-container {
