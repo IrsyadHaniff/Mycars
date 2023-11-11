@@ -1,0 +1,455 @@
+:root {
+  --warnaBaackground: #101728;
+  --warnaTeks: #9340ff;
+  --warnaShadow: #1f41bb;
+  --warnaUngu: #260e69;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  background-color: var(--warnaBaackground);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo {
+  font-family: "Lilita One", sans-serif;
+  width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+  position: relative;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1rem;
+  background-color: white;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+header.navbar-container .nav-list li a:hover::after {
+  transform: scaleX(0.3);
+}
+
+header.navbar-container .nav-list li:hover a {
+  color: var(--warnaTeks);
+}
+
+.content {
+  text-align: center;
+  width: 50%;
+  height: 90%;
+  float: left;
+  padding-top: 90px;
+}
+
+.content h1 {
+  font-family: "Lilita One", sans-serif;
+  font-size: 4rem;
+  text-shadow: 7px 4px 2px var(--warnaTeks);
+}
+
+.content h1,
+.content p {
+  text-align: justify;
+  padding-left: 150px;
+  line-height: 1;
+}
+
+.content-image {
+  padding-top: 50px;
+  text-align: center;
+  line-height: 400px;
+  width: 50%;
+  height: 90%;
+  float: right;
+  position: relative;
+}
+
+.content-image::before {
+  content: "";
+  position: absolute;
+  top: 50;
+  left: 200;
+  width: 50%;
+  height: 50%;
+  box-shadow: 20px 20px 10px #084cb179;
+  background-color: var(--warnaShadow);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.content button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #c820df;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+.content button a {
+  text-decoration: none;
+  color: white;
+}
+.content button:hover {
+  background-color: var(--warnaBaackground);
+  color: var(--warnaTeks);
+}
+
+.about {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+.about h2 {
+  font-size: 3rem;
+  font-family: "Lilita One", sans-serif;
+  color: var(--warnaTeks);
+  text-shadow: 2px 2px 0px white;
+}
+.about p::before,
+.about p::after {
+  content: '"';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}
+.about hr {
+  width: 300px;
+}
+
+/*PRODUK*/
+.spek .container {
+  padding: 20px;
+  height: 400px;
+  border: 1px solid black;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
+.spek h3 {
+  padding-left: 10px;
+  font-size: 3rem;
+  font-family: "Lilita One", sans-serif;
+  color: var(--warnaTeks);
+  text-shadow: 2px 2px 0px white;
+}
+.spek li {
+  margin-bottom: 10px;
+}
+.spek .left-content {
+  text-align: justify;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.spek .right-content {
+  padding-top: 50px;
+  text-align: center;
+  line-height: 400px;
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+}
+
+.spek .container .right-content img {
+  width: 100%;
+  height: 300px;
+}
+
+.spek .right-content::before {
+  content: "";
+  position: absolute;
+  top: 50;
+  left: 30;
+  width: 60%;
+  height: 60%;
+  box-shadow: 20px 20px 10px #d4d7db79;
+  background-color: rgba(245, 245, 245, 0.785);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/*spek 2*/
+.spek2 .container {
+  padding: 20px;
+  height: 400px;
+  border: 1px solid black;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
+}
+
+.spek2 h3 {
+  padding-left: 10px;
+  font-size: 3rem;
+  font-family: "Lilita One", sans-serif;
+  color: var(--warnaTeks);
+  text-shadow: 2px 2px 0px white;
+}
+.spek2 li {
+  margin-bottom: 10px;
+}
+.spek2 .left-content ol {
+  display: inline-block;
+  text-align: right; /*text ke kiri */
+  padding-right: 10px;
+}
+.spek2 .left-content {
+  text-align: right;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+
+.spek2 .right-content {
+  padding-top: 50px;
+  text-align: center;
+  line-height: 400px;
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.spek2 .container .right-content img {
+  width: 100%;
+  height: 300px;
+}
+
+.spek2 .right-content::before {
+  content: "";
+  position: absolute;
+  top: 50;
+  left: 30;
+  width: 60%;
+  height: 60%;
+  box-shadow: 20px 20px 10px #d4d7db79;
+  background-color: rgba(245, 245, 245, 0.785);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/*FOOTER*/
+
+.biodata h3,
+.footer h3 {
+  padding-left: 10px;
+  font-size: 3rem;
+  font-family: "Lilita One", sans-serif;
+  color: var(--warnaTeks);
+  text-shadow: 2px 2px 0px white;
+}
+
+.footer {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  float: right;
+}
+.biodata {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-color: var(--warnaUngu);
+  color: white;
+  text-align: center;
+  border-radius: 10px; /* border-radius ke background biodata */
+}
+
+.biodata img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /*buat jadi bulet*/
+  border: 2px solid white;
+  margin-bottom: 10px; /* jarak bawah pada gambar */
+}
+
+.biodata ol {
+  list-style: none;
+  padding: 0;
+}
+
+.biodata li {
+  margin-bottom: 5px; /* jarak antara item daftar */
+}
+
+.footer .socials {
+  padding: 1rem 0;
+}
+
+.footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+.footer .socials a:hover,
+.footer .links a:hover {
+  color: var(--warnaUngu);
+}
+
+/*MEDIA QUERIES*/
+/* Laptop/Desktop */
+@media only screen and (min-width: 1200px) {
+  header.navbar-container {
+    padding-block: 2rem;
+  }
+
+  .content {
+    width: 60%;
+  }
+
+  .content h1,
+  .content p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .content-image {
+    width: 40%;
+  }
+
+  .about {
+    width: 60%;
+  }
+
+  .spek,
+  .spek2 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spek .container,
+  .spek2 .container {
+    width: 100%;
+  }
+
+  .footer {
+    width: 50%;
+  }
+
+  .biodata {
+    width: 50%;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 14px;
+  }
+
+  header.navbar-container {
+    padding-block: 1.5rem;
+  }
+
+  .content,
+  .content-image,
+  .about,
+  .spek .container,
+  .spek2 .container,
+  .footer,
+  .biodata {
+    width: 80%;
+    margin-inline: auto;
+  }
+
+  .spek,
+  .spek2 {
+    flex-direction: column;
+  }
+
+  .spek .container,
+  .spek2 .container {
+    width: 100%;
+  }
+}
+
+/* Hp */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  header.navbar-container {
+    padding-block: 1rem;
+  }
+
+  .content,
+  .content-image,
+  .about,
+  .spek .container,
+  .spek2 .container,
+  .footer,
+  .biodata {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .content h1,
+  .content p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .spek,
+  .spek2 {
+    flex-direction: column;
+  }
+
+  .spek .container,
+  .spek2 .container {
+    width: 100%;
+  }
+}
