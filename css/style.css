@@ -420,7 +420,6 @@ header.navbar-container .nav-list li:hover a {
 @media only screen and (max-width: 767px) {
   body {
     font-size: 14px;
-    width: 100%;
   }
 
   header.navbar-container {
