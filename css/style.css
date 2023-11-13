@@ -8,6 +8,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   margin: 0;
@@ -15,6 +20,11 @@ body {
   color: white;
   display: flex;
   flex-direction: column;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
 }
 
 header.navbar-container {
@@ -339,6 +349,30 @@ header.navbar-container .nav-list li:hover a {
   color: var(--warnaUngu);
 }
 
+.produk {
+  float: left;
+  width: 80%;
+  height: 100%;
+}
+.info {
+  float: right;
+  width: 20%;
+  height: 100%;
+  padding-left: 10px;
+  border: 2px dashed white;
+}
+
+.info figure img {
+  width: 100px;
+  height: 100px;
+}
+.info figcaption a {
+  text-decoration: none;
+  color: white;
+}
+.info figcaption a:hover {
+  color: var(--warnaUngu);
+}
 /*MEDIA QUERIES*/
 /* Laptop/Desktop */
 @media only screen and (max-width: 1366px) {
@@ -454,5 +488,20 @@ header.navbar-container .nav-list li:hover a {
   .spek .container,
   .spek2 .container {
     width: 100%;
+  }
+
+  .info {
+    width: 20%;
+    padding-left: 10px;
+    border: 2px dashed white;
+    overflow: auto;
+  }
+
+  .info figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+    height: 90px;
   }
 }
